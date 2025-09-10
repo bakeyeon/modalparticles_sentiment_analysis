@@ -2,7 +2,7 @@
 
 This is a term paper for the MA program in SS24, titled "Deep Learning in NLP" at Heinrich-Heine University. This study is based on amy previous paper about modal particles(in Appendix A). I appreciate your understanding regarding its preliminary nature. I welcome any inquiries or discussions related to this research.
 
-Author: Hye-Yeon Park (Ms)
+Author: Kai H. Park (Ms)
 Contact: hyeyeon.park@hhu.de
 
 Abstract:
