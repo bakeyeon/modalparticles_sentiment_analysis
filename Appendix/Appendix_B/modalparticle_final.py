@@ -270,3 +270,86 @@ plt.grid(True, linestyle='--', alpha=0.6)
 plt.legend()
 plt.tight_layout()
 plt.show()
+
+
+# Hybrid comparison of rescaled HF, BERT 
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
+data = {
+    'Particle': ['doch', 'schon', 'mal', 'eigentlich', 'halt', 'eben', 'ja', 'wirklich', 'ruhig'],
+    'HF': [1.98, 2.06, 1.60, -2.10, 1.88, 1.86, 2.36, -2.44, 1.42],
+    'BERT': [-0.42, 0.51, 1.32, 0.49, 1.58, -1.41, -0.36, -1.70, -0.63],
+    'FastText': [-0.15, 0.69, -0.38, -0.16, -0.34, 0.84, 0.71, -0.38, -0.13],
+    'Previous_Study': [0.3185, 0.0269, 0.1065, -0.1214, -0.1571, -0.0143, 0.3721, 0.1929, 0.6071]
+}
+
+df = pd.DataFrame(data)
+
+# Perform MinMax scaling for Hugging Face to a range of -1 to 1
+min_hf = df['HF'].min()
+max_hf = df['HF'].max()
+df['Scaled_HF'] = (df['HF'] - min_hf) / (max_hf - min_hf) * (1 - (-1)) + (-1)
+
+# Perform MinMax scaling for BERT to a range of -1 to 1
+min_bert = df['BERT'].min()
+max_bert = df['BERT'].max()
+df['Scaled_BERT'] = (df['BERT'] - min_bert) / (max_bert - min_bert) * (1 - (-1)) + (-1)
+
+# Create the plot
+plt.figure(figsize=(12, 7))
+plt.plot(df['Particle'], df['Scaled_HF'], marker='o', label='Scaled Hugging Face')
+plt.plot(df['Particle'], df['Scaled_BERT'], marker='o', label='Scaled BERT')
+plt.plot(df['Particle'], df['FastText'], marker='o', label='FastText (Unscaled)')
+plt.plot(df['Particle'], df['Previous_Study'], marker='o', linestyle='--', label='Previous Study (Unscaled)')
+
+plt.title('Comparison of Scaled and Unscaled Scores', fontsize=16)
+plt.xlabel('Modal Particle', fontsize=12)
+plt.ylabel('Score', fontsize=12)
+plt.xticks(rotation=45, ha='right')
+plt.legend()
+plt.grid(True, linestyle='--', alpha=0.6)
+plt.tight_layout()
+
+# Save the plot to a file
+plt.savefig('hybrid_sentiment_comparison.png')
+
+# Correlation Heatmap
+
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy as np
+
+data = {
+    'Particle': ['doch', 'schon', 'mal', 'eigentlich', 'halt', 'eben', 'ja', 'wirklich', 'ruhig'],
+    'HF_Delta': [1.98, 2.06, 1.60, -2.10, 1.88, 1.86, 2.36, -2.44, 1.42],
+    'BERT_Delta': [-0.42, 0.51, 1.32, 0.49, 1.58, -1.41, -0.36, -1.70, -0.63],
+    'FastText_Delta': [-0.15, 0.69, -0.38, -0.16, -0.34, 0.84, 0.71, -0.38, -0.13],
+    'Previous_Study_Score': [0.3185, 0.0269, 0.1065, -0.1214, -0.1571, -0.0143, 0.3721, 0.1929, 0.6071]
+}
+
+df = pd.DataFrame(data)
+
+# Set the Particle column as index
+df.set_index('Particle', inplace=True)
+
+# Calculate the correlation matrix
+correlation_matrix = df.corr(method='pearson')
+
+# Create a heatmap
+plt.figure(figsize=(8, 6))
+sns.heatmap(correlation_matrix, annot=True, fmt=".2f", cmap='coolwarm',
+            cbar_kws={'label': 'Correlation Coefficient'})
+
+plt.title('Correlation Matrix of Sentiment Scores', fontsize=16)
+plt.xticks(rotation=45, ha='right')
+plt.yticks(rotation=0)
+plt.tight_layout()
+
+# Save the plot to a file
+plt.savefig('sentiment_correlation_heatmap.png')
+
+
