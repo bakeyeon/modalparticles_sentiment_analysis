@@ -7,3 +7,10 @@ Contact: hyeyeon.park@hhu.de
 
 Abstract:
  This paper explores the emotional tendencies of German modal particles based on real-world sentence data. Building on a previous study that compared modal particles with expressive emojis through a survey, this research uses sentiment analysis to calculate average emotional values for selected particles (ja, doch, schon, etc.). Three models were tested to compare their performance. The goal of this study is to quantify the sentiment carried by German modal particles and examine to what extent they encode affective meaning. By comparing three sentiment analysis models(FastText, Hugging Face pipeline, and BERT), this research investigates whether similar sentimental patterns are detected across models, which model responds most sensitively to subtle sentiment shifts, and which model’s output aligns most closely with human evaluation from a previous study. The findings are intended to inform future strategies for mapping sentiment-driven features in multilingual translation contexts.
+
+
+ ## Limitations
+- Subjectivity of Survey Data: As the study relies on surveys of proficient language users, the data is inherently subject to individual interpretation and personal perception of emotional nuances.
+- Small Sample Size and Robustness: With $N=35$ for Survey 1 and $N=112$ for Survey 2, the relatively small sample sizes may limit the statistical robustness and the generalizability of the findings to a broader population.
+- Cross-Cultural and Linguistic Variables: Emotional perception is deeply tied to cultural background and language proficiency. These factors influence how both modal particles and emojis are interpreted, potentially limiting the universal applicability of the results.
+- Contextual Ambiguity and Polysemy: Certain particles, such as ja or schon, can convey opposing sentiments (e.g., friendliness vs. annoyance) depending on the context. Assigning a fixed sentiment score to these particles involves a degree of arbitrary simplification of their pragmatic complexity.
