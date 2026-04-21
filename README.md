@@ -17,13 +17,14 @@ This research was developed for the MA course "Deep Learning in NLP" (SS24) and 
 - Syntactic Position and Pragmatic Variance: While it is standard linguistic practice to account for subtle shifts in meaning based on the exact position of an element within a sentence, this study did not strictly control for syntactic variables. Consequently, the findings may have inherent limitations in capturing the full range of pragmatic nuances associated with word order variations.
 
 
-## Acknowledgments
-I would like to express my sincere gratitude to Prof. Jacopo Romoli and Dr. Yulia Zinova for their invaluable guidance, insightful feedback, and academic supervision. Their expertise and encouragement were instrumental in the development of this research and in shaping its linguistic and technical depth.
-
-
 ## Related Study & Projects 
 Modalpartikeln': Can Sentiments Survive Translation with Emojis?
 [https://github.com/bakeyeon/modalparticles_sentiment_analysis](https://github.com/bakeyeon/Modalparticles_Emojis)
 
 Sentiment Translator
 https://github.com/bakeyeon/sentiment_translator
+
+
+## Acknowledgments
+I would like to express my sincere gratitude to Prof. Jacopo Romoli and Dr. Yulia Zinova for their invaluable guidance, insightful feedback, and academic supervision. Their expertise and encouragement were instrumental in the development of this research and in shaping its linguistic and technical depth.
+
