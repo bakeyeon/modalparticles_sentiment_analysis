@@ -26,4 +26,4 @@ https://github.com/bakeyeon/sentiment_translator
 
 
 ## Acknowledgments
-I would like to thank Dr. Yulia Zinova for providing the insightful lectures and the academic environment that inspired this research. While this study was conducted independently, his/her course was instrumental in shaping the foundational ideas.
+I would like to thank Prof. Jacopo Romoli and Dr. Yulia Zinova for providing the insightful lectures and the academic environment that inspired this research. While this study was conducted independently, his/her course was instrumental in shaping the foundational ideas.
