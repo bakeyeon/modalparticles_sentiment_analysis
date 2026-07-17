@@ -25,6 +25,10 @@ Modalpartikeln': Can Sentiments Survive Translation with Emojis?
 Sentiment Translator
 https://github.com/bakeyeon/sentiment_translator
 
+Medium Post: Can We Translate Our Sentiments? 
+https://medium.com/gopenai/can-we-translate-our-sentiments-140c55822ead?sharedUserId=kaiwritesornot
+
+
 
 ## Acknowledgments
 I would like to thank Prof. Jacopo Romoli and Dr. Yulia Zinova for providing the insightful lectures and the academic environment that inspired this research. Their courses were instrumental in shaping the foundational ideas. 
