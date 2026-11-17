@@ -20,7 +20,7 @@ This research was developed for the MA course "Deep Learning in NLP" (SS24) and 
 
 ## Related Study & Projects 
 Modalpartikeln': Can Sentiments Survive Translation with Emojis?
-[https://github.com/bakeyeon/modalparticles_sentiment_analysis](https://github.com/bakeyeon/Modalparticles_Emojis)
+[https://github.com/bakeyeon/Modalparticles_Emojis](https://github.com/bakeyeon/Modalparticles_Emojis)
 
 Sentiment Translator
 https://github.com/bakeyeon/sentiment_translator
@@ -29,6 +29,20 @@ Medium Post: Can We Translate Our Sentiments?
 https://medium.com/gopenai/can-we-translate-our-sentiments-140c55822ead?sharedUserId=kaiwritesornot
 
 
+## Citation
+```
+@misc{park_2025_24326464,
+  author       = {Park, Kai},
+  title        = {How Much Sentiment Can Be Carried by Modal Particles? - A Comparative Analysis Using BERT, Hugging Face, and FastText Models},
+  month        = aug,
+  year         = 2025,
+  publisher    = {Zenodo},
+  version      = {v1.0.0},
+  doi          = {10.5281/zenodo.24326464},
+  url          = {https://doi.org/10.5281/zenodo.24326464},
+}
+
+```
 
 ## Acknowledgments
 I would like to thank Prof. Jacopo Romoli and Dr. Yulia Zinova for providing the insightful lectures and the academic environment that inspired this research. Their courses were instrumental in shaping the foundational ideas. 
